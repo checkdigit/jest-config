@@ -1,36 +1,32 @@
-# Check Digit < Insert name > Library
+# eslint-config
 
-The Check Digit < Insert Name >  library is a library for Check Digit services to deal with [ short description about what the library does]
-  
-  Features:
-* Feature 1
-* Feature 2
-* Feature3
-* (...)
+[![MIT License](https://img.shields.io/github/license/checkdigit/jest-config)](https://github.com/checkdigit/jest-config/blob/master/LICENSE.txt)
 
+Copyright (c) 2022 [Check Digit, LLC](https://checkdigit.com)
 
+Check Digit [Jest](https://jestjs.io/) presets and configuration.
 
-### Installing
+### Install
 
-`npm install @checkdigit/< Insert name >` 
-
-### Use
-It could be. i.e.
-```
-import * as insertName from '@checkdigit/< Insert name >';
-
-const someVariable = insertName();
-
+```bash
+$ npm i @checkdigit/jest-config --save-dev
 ```
 
-Or if it can be called as a script. i.e.
+### Example `package.json`
+
+```jsonc
+{
+  // ...
+  "scripts": {
+    "test": "npm run jest"
+  }
+  // ...
+  "jest": {
+    "preset": "@checkdigit/jest-config"
+  }
+}
 ```
-insert-name -b src/package.json
-```
 
+## License
 
-### Links
-
-* Company website: [your.website.url]
-* Npm: [npm.url]
-    
+MIT
