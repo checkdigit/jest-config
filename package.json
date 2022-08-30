@@ -9,9 +9,10 @@
     "node": ">=16"
   },
   "peerDependencies": {
-    "@types/jest": "^28.1.3",
-    "jest": "^28.1.1",
-    "ts-jest": "^28.0.8"
+    "@types/jest": "28.1.8",
+    "dotenv": "16.0.2",
+    "jest": "28.1.3",
+    "ts-jest": "28.0.8"
   },
   "scripts": {
     "postversion": "git push && git push --tags",
@@ -48,6 +49,9 @@
     "collectCoverageFrom": [
       "<rootDir>/src/**",
       "!<rootDir>/src/**/*.spec.ts"
+    ],
+    "setupFiles": [
+      "<rootDir>/node_modules/dotenv/config.js"
     ],
     "globals": {
       "ts-jest": {
