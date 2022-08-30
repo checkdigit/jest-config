@@ -12,6 +12,9 @@ Check Digit [Jest](https://jestjs.io/) presets and configuration.
 $ npm i @checkdigit/jest-config --save-dev
 ```
 
+Note that `@checkdigit/jest-config` automatically brings in the correct versions of
+`jest`, `ts-jest`,`@types/jest` and `env` via `peerDependencies`. Do not install these packages separately.
+
 ### Example `package.json`
 
 ```jsonc
