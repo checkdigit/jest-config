@@ -1,4 +1,4 @@
-# eslint-config
+# jest-config
 
 [![MIT License](https://img.shields.io/github/license/checkdigit/jest-config)](https://github.com/checkdigit/jest-config/blob/master/LICENSE.txt)
 

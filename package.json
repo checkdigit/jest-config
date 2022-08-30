@@ -28,17 +28,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/checkdigit/eslint-config.git"
+    "url": "git+https://github.com/checkdigit/jest-config.git"
   },
   "keywords": [
-    "eslint"
+    "jest"
   ],
   "author": "Check Digit, LLC",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/checkdigit/eslint-config/issues"
+    "url": "https://github.com/checkdigit/jest-config/issues"
   },
-  "homepage": "https://github.com/checkdigit/eslint-config#readme",
+  "homepage": "https://github.com/checkdigit/jest-config#readme",
   "devDependencies": {
     "@checkdigit/eslint-config": "^7.2.2",
     "@checkdigit/prettier-config": "^3.0.0",
