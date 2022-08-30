@@ -2,7 +2,9 @@
 
 // eslint-disable-next-line unicorn/prefer-module
 module.exports = {
-  preset: 'ts-jest',
+  transform: {
+    '^.+\\.ts$': 'ts-jest',
+  },
   collectCoverageFrom: ['<rootDir>/src/**', '!<rootDir>/src/**/*.spec.ts'],
   setupFiles: ['<rootDir>/node_modules/dotenv/config.js'],
   globals: {
