@@ -23,7 +23,13 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
       - name: Install dependencies
-        run: npm ci
+        run: npm ci --ignore-scripts
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Audit Signatures
+        run: npm audit signatures
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Compile
         run: npm run ci:compile
       - name: Check Code Style
@@ -49,7 +55,13 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
       - name: Install dependencies
-        run: npm ci
+        run: npm ci --ignore-scripts
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Audit Signatures
+        run: npm audit signatures
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Compile
         run: npm run ci:compile
       - name: Check Code Style
