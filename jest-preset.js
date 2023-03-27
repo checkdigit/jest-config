@@ -13,7 +13,7 @@ module.exports = {
       },
     ],
   },
-  collectCoverageFrom: ['<rootDir>/src/**', '!<rootDir>/src/**/*.spec.ts'],
+  collectCoverageFrom: ['<rootDir>/src/**', '!<rootDir>/src/**/*.spec.ts', '!<rootDir>/src/**/*.test.ts'],
   setupFiles: ['<rootDir>/node_modules/dotenv/config.js'],
   testMatch: ['<rootDir>/src/**/*.spec.ts'],
 };
