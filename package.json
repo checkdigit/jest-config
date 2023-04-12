@@ -12,7 +12,7 @@
     "@types/jest": "29.5.0",
     "dotenv": "16.0.3",
     "jest": "29.5.0",
-    "ts-jest": "29.0.5"
+    "ts-jest": "29.1.0"
   },
   "scripts": {
     "postversion": "git push && git push --tags",
@@ -40,7 +40,7 @@
   },
   "homepage": "https://github.com/checkdigit/jest-config#readme",
   "devDependencies": {
-    "@checkdigit/eslint-config": "^7.6.0",
+    "@checkdigit/eslint-config": "^7.8.0",
     "@checkdigit/prettier-config": "^3.3.0",
     "@checkdigit/typescript-config": "^3.3.0"
   }
