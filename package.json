@@ -40,7 +40,7 @@
   },
   "homepage": "https://github.com/checkdigit/jest-config#readme",
   "devDependencies": {
-    "@checkdigit/eslint-config": "^7.6.0",
+    "@checkdigit/eslint-config": "^7.8.0",
     "@checkdigit/prettier-config": "^3.3.0",
     "@checkdigit/typescript-config": "^3.3.0"
   }
