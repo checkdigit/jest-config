@@ -3,7 +3,7 @@
 import path from 'node:path';
 import { promises as fs } from 'node:fs';
 
-// disable TypeScript-specific type checking issues
+// this is an ESM Javascript file, disable TypeScript-specific type checking issues
 // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
 const packageJson = JSON.parse(await fs.readFile(path.join(process.cwd(), 'package.json'), 'utf8'));
 // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access

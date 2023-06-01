@@ -18,7 +18,7 @@
     "postversion": "git push && git push --tags",
     "prettier": "prettier --ignore-path .gitignore --list-different .",
     "prettier:fix": "prettier --ignore-path .gitignore --write .",
-    "lint": "eslint -f unix --ext .js,.ts src/**",
+    "lint": "eslint -f unix --ext .js,.ts src/** *.js",
     "test": "npm run ci:compile && npm run ci:lint && npm run ci:style && npm run ci:test",
     "ci:test": "NODE_OPTIONS=\"--no-warnings --experimental-vm-modules\" jest --coverage=false",
     "ci:coverage": "NODE_OPTIONS=\"--no-warnings --experimental-vm-modules\" jest --coverage=true",
