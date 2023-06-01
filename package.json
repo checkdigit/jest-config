@@ -4,7 +4,7 @@
   "description": "Check Digit standard Jest configuration",
   "private": false,
   "prettier": "@checkdigit/prettier-config",
-  "main": "./jest-preset.js",
+  "main": "jest.config.js",
   "engines": {
     "node": ">=16"
   },
