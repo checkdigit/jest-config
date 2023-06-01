@@ -1,10 +1,9 @@
 // jest-preset.js
 
-// this is a CommonJS Javascript file, so we can't use imports
 import path from 'node:path';
 import { promises as fs } from 'node:fs';
 
-// again, this is a CommonJS Javascript file, so we can't use async/await and Typescript warnings are not relevant
+// disable TypeScript-specific type checking issues
 // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
 const packageJson = JSON.parse(await fs.readFile(path.join(process.cwd(), 'package.json'), 'utf8'));
 // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
