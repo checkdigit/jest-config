@@ -49,5 +49,7 @@
       "@checkdigit/eslint-config"
     ]
   },
-  "files": []
+  "files": [
+    "jest-preset.js"
+  ]
 }
