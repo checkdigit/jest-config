@@ -1,7 +1,6 @@
-// jest-preset.js
+// jest-preset.mjs
 
-// eslint-disable-next-line unicorn/prefer-module
-module.exports = {
+export default {
   extensionsToTreatAsEsm: ['.ts'],
   transform: {
     '^.+\\.ts$': [
