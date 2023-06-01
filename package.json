@@ -15,7 +15,6 @@
     "ts-jest": "29.1.0"
   },
   "scripts": {
-    "postversion": "git push && git push --tags",
     "prettier": "prettier --ignore-path .gitignore --list-different .",
     "prettier:fix": "prettier --ignore-path .gitignore --write .",
     "lint": "eslint -f unix --ext .js,.ts src/** *.js",
