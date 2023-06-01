@@ -4,12 +4,7 @@
   "description": "Check Digit standard Jest configuration",
   "private": false,
   "prettier": "@checkdigit/prettier-config",
-  "exports": {
-    ".": {
-      "require": "./jest-preset.cjs",
-      "import": "./jest-preset.mjs"
-    }
-  },
+  "main": "./jest-preset.js",
   "engines": {
     "node": ">=16"
   },
@@ -54,8 +49,5 @@
       "@checkdigit/eslint-config"
     ]
   },
-  "files": [
-    "jest-preset.cjs",
-    "jest-preset.mjs"
-  ]
+  "files": []
 }
