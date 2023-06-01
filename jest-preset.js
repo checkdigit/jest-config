@@ -1,16 +1,16 @@
 // jest-preset.js
 
-// eslint-disable-next-line @typescript-eslint/no-require-imports,@typescript-eslint/no-var-requires,unicorn/prefer-module
-const path = require('node:path');
-// eslint-disable-next-line @typescript-eslint/no-require-imports,@typescript-eslint/no-var-requires,unicorn/prefer-module
-const fs = require('node:fs');
-// eslint-disable-next-line no-sync,@typescript-eslint/no-unsafe-assignment
-const packageJson = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'package.json'), 'utf8'));
+// this is a CommonJS Javascript file, so we can't use imports
+import path from 'node:path';
+import { promises as fs } from 'node:fs';
+
+// again, this is a CommonJS Javascript file, so we can't use async/await and Typescript warnings are not relevant
+// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+const packageJson = JSON.parse(await fs.readFile(path.join(process.cwd(), 'package.json'), 'utf8'));
 // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
 const useESM = packageJson.type === 'module';
 
-// eslint-disable-next-line unicorn/prefer-module
-module.exports = {
+export default {
   ...(useESM ? { extensionsToTreatAsEsm: ['.ts'] } : {}),
   transform: {
     '^.+\\.ts$': [
