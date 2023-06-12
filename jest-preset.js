@@ -21,7 +21,14 @@ export default {
       },
     ],
   },
-  collectCoverageFrom: ['<rootDir>/src/**', '!<rootDir>/src/**/*.spec.ts', '!<rootDir>/src/**/*.test.ts'],
+  collectCoverageFrom: [
+    '<rootDir>/src/**',
+    '!<rootDir>/src/**/*.spec.ts',
+    '!<rootDir>/src/**/*.test.ts',
+    '!<rootDir>/src/**/swagger.ts',
+    '!<rootDir>/src/**/swagger.validator.ts',
+    '!<rootDir>/src/**/swagger.guard.ts',
+  ],
   setupFiles: ['<rootDir>/node_modules/dotenv/config.js'],
   testMatch: ['<rootDir>/src/**/*.spec.ts'],
 };
