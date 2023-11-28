@@ -6,7 +6,7 @@
   "prettier": "@checkdigit/prettier-config",
   "type": "module",
   "engines": {
-    "node": ">=20.9"
+    "node": ">=20.10"
   },
   "peerDependencies": {
     "@types/jest": "29.5.10",
