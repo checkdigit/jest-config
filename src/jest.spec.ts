@@ -1,6 +1,6 @@
 // jest.spec.ts
 
-import { jest } from '@jest/globals';
+import { describe, it, jest } from '@jest/globals';
 
 import checkValue from './jest.test';
 import getValue from './jest';
@@ -10,7 +10,7 @@ describe('jest', () => {
     checkValue(getValue());
   });
 
-  it('mock works', () => {
+  it('mock works without typing conflict', () => {
     jest.useFakeTimers();
   });
 });
