@@ -13,10 +13,12 @@ jobs:
     runs-on: ubuntu-latest
     name: Coverage
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout Code
+        uses: actions/checkout@v3
         with:
           ref: ${{ github.event.pull_request.head.sha }}
-      - uses: actions/setup-node@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
           node-version: '20.10'
           cache: 'npm'
