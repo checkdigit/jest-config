@@ -1,6 +1,6 @@
 {
   "name": "@checkdigit/jest-config",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "description": "Check Digit standard Jest configuration",
   "author": "Check Digit, LLC",
   "license": "MIT",
