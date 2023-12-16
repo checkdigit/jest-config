@@ -7,8 +7,8 @@ on:
 
 jobs:
   publishBeta:
-    runs-on: ubuntu-latest
     name: Publish Beta
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3

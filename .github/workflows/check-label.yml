@@ -7,8 +7,8 @@ on:
 
 jobs:
   checkLabel:
-    runs-on: ubuntu-latest
     name: Check label
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
         with:
