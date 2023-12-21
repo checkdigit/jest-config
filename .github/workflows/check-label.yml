@@ -1,0 +1,19 @@
+name: Check Label
+
+on:
+  pull_request:
+    branches:
+      - 'main'
+
+jobs:
+  checkLabel:
+    name: Check label
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - name: Check Label
+        uses: checkdigit/github-actions/check-label@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

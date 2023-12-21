@@ -13,7 +13,7 @@ $ npm i @checkdigit/jest-config --save-dev
 ```
 
 Note that `@checkdigit/jest-config` automatically brings in the correct versions of
-`jest`, `ts-jest`,`@types/jest` and `env` via `peerDependencies`. Do not install these packages separately.
+`jest`, `ts-jest`,`@jest/globals` and `dotenv` via `peerDependencies`. Do not install these packages separately.
 
 #### Automatic ESM detection
 
