@@ -18,7 +18,7 @@
   ],
   "type": "module",
   "engines": {
-    "node": ">=20.10"
+    "node": ">=20.x"
   },
   "files": [
     "jest-preset.js"
@@ -30,7 +30,7 @@
     "ts-jest": "29.1.1"
   },
   "devDependencies": {
-    "@checkdigit/eslint-config": "^9.0.0",
+    "@checkdigit/eslint-config": "^9.1.0",
     "@checkdigit/prettier-config": "^5.0.0",
     "@checkdigit/typescript-config": "^6.0.0"
   },
