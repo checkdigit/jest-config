@@ -2,7 +2,7 @@
 
 [![MIT License](https://img.shields.io/github/license/checkdigit/jest-config)](https://github.com/checkdigit/jest-config/blob/master/LICENSE.txt)
 
-Copyright (c) 2023 [Check Digit, LLC](https://checkdigit.com)
+Copyright (c) 2023–2024 [Check Digit, LLC](https://checkdigit.com)
 
 Check Digit [Jest](https://jestjs.io/) presets and configuration.
 
@@ -15,39 +15,29 @@ $ npm i @checkdigit/jest-config --save-dev
 Note that `@checkdigit/jest-config` automatically brings in the correct versions of
 `jest`, `ts-jest`,`@jest/globals` and `dotenv` via `peerDependencies`. Do not install these packages separately.
 
-#### Automatic ESM detection
+#### ESM
 
-`@checkdigit/jest-config` will automatically detect whether your project is using ESM or CommonJS modules and configure
-Jest accordingly. If you are using ESM modules, you must have `"type": "module"` in your `package.json` file.
+**`@checkdigit/jest-config` is now ESM only.**
+
+It only supports testing with ESM modules,
+i.e., you must have `"type": "module"` in your `package.json` file.
 
 Note that the Node `--experimental-vm-modules` flag is required for ESM modules. See the
 [Jest docs](https://jestjs.io/docs/ecmascript-modules) for more information.
 
-### Examples
-
-#### CommonJS `package.json`
-
-```jsonc
-{
-  // ...
-  "scripts": {
-    "test": "npm run jest"
-  }
-  // ...
-  "jest": {
-    "preset": "@checkdigit/jest-config"
-  }
-}
-```
+### Example
 
 #### ESM `package.json`
+
+Note: this requires NodeJS v20.11 or later.
 
 ```jsonc
 {
   // ...
   "type": "module",
   "scripts": {
-    "test": "NODE_OPTIONS=\"--experimental-vm-modules\" jest"
+    "test": "NODE_OPTIONS=\"--disable-warning ExperimentalWarning --experimental-vm-modules\" jest --coverage=false"
+    "test:coverage": "NODE_OPTIONS=\"--disable-warning ExperimentalWarning --experimental-vm-modules\" jest --coverage=true"
   }
   // ...
   "jest": {
