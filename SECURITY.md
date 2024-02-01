@@ -6,8 +6,8 @@ These versions of `@checkdigit/jest-config` are currently being supported with s
 
 | Version | Supported          |
 | ------- | ------------------ |
-| \>= 4.x | :white_check_mark: |
-| \< 4.0  | :x:                |
+| \>= 6.x | :white_check_mark: |
+| \< 6.0  | :x:                |
 
 ## Reporting a Vulnerability
 
