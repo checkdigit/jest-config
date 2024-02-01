@@ -19,6 +19,10 @@ jobs:
         with:
           node-version: '20.x'
           registry-url: 'https://registry.npmjs.org'
+      - name: Check Label
+        uses: checkdigit/github-actions/check-label@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Check Imports
         uses: checkdigit/github-actions/check-imports@main
       - name: Install Dependencies
