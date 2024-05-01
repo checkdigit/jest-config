@@ -27,13 +27,13 @@ Note that the Node `--experimental-vm-modules` flag is required for ESM modules.
 
 #### .env
 
-The .env file is automatically loaded via `process.loadEnvFile()` (available in Node 20.12+).
+The project `.env` file is automatically loaded via `process.loadEnvFile()` (available in Node.js 20.12 or later).
 
 ### Example
 
 #### ESM `package.json`
 
-Note: this requires NodeJS v20.11 or later.
+Note: this requires Node.js v20.11 or later.
 
 ```jsonc
 {
