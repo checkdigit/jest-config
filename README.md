@@ -13,7 +13,7 @@ $ npm i @checkdigit/jest-config --save-dev
 ```
 
 Note that `@checkdigit/jest-config` automatically brings in the correct versions of
-`jest`, `ts-jest`,`@jest/globals` and `dotenv` via `peerDependencies`. Do not install these packages separately.
+`jest`, `ts-jest` and `@jest/globals` via `peerDependencies`. Do not install these packages separately.
 
 #### ESM
 
@@ -25,11 +25,15 @@ i.e., you must have `"type": "module"` in your `package.json` file.
 Note that the Node `--experimental-vm-modules` flag is required for ESM modules. See the
 [Jest docs](https://jestjs.io/docs/ecmascript-modules) for more information.
 
+#### .env
+
+The project `.env` file is automatically loaded via `process.loadEnvFile()` (available in Node.js 20.12 or later).
+
 ### Example
 
 #### ESM `package.json`
 
-Note: this requires NodeJS v20.11 or later.
+Note: this requires Node.js v20.11 or later.
 
 ```jsonc
 {

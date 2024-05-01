@@ -7,8 +7,8 @@ on:
 
 jobs:
   checkPublished:
-    runs-on: ubuntu-latest
     name: Check Published
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4

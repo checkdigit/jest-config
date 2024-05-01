@@ -1,5 +1,7 @@
 // jest-preset.js
 
+process.loadEnvFile();
+
 export default {
   extensionsToTreatAsEsm: ['.ts'],
   transform: {
@@ -14,6 +16,5 @@ export default {
   },
   coverageProvider: 'v8',
   collectCoverageFrom: ['<rootDir>/src/**'],
-  setupFiles: ['<rootDir>/node_modules/dotenv/config.js'],
   testMatch: ['<rootDir>/src/**/*.spec.ts'],
 };

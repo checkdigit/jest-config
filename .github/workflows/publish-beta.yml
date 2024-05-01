@@ -25,6 +25,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Check Imports
         uses: checkdigit/github-actions/check-imports@main
+      - name: Install latest npm
+        run: npm install -g npm@latest
       - name: Install Dependencies
         run: npm ci --ignore-scripts
       - name: Audit Signatures
@@ -38,7 +40,7 @@ jobs:
         run: npm publish --tag beta
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN_PUBLISH }}
-      - name: Comment npm publish result
+      - name: Comment
         uses: checkdigit/github-actions/comment-npm-publish@main
         with:
           betaPackage: ${{ steps.prepare-beta.outputs.betaPackage }}
