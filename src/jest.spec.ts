@@ -18,4 +18,8 @@ describe('jest', () => {
   it('mock works without typing conflict', () => {
     jest.useFakeTimers();
   });
+
+  it('sees environment variables set in .env file', () => {
+    assert.equal(process.env['TEST_ENV'], 'hello world');
+  });
 });
