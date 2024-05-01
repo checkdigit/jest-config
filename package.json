@@ -36,6 +36,7 @@
   "scripts": {
     "lint": "eslint --max-warnings 0 --ignore-path .gitignore .",
     "lint:fix": "eslint --ignore-path .gitignore . --fix",
+    "prepare": "",
     "prettier": "prettier --ignore-path .gitignore --list-different .",
     "prettier:fix": "prettier --ignore-path .gitignore --write .",
     "test": "npm run ci:compile && npm run ci:test && npm run ci:coverage && npm run ci:lint && npm run ci:style",
