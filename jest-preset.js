@@ -1,6 +1,10 @@
 // jest-preset.js
 
-process.loadEnvFile();
+try {
+  process.loadEnvFile();
+} catch {
+  // it's ok if there's no .env file
+}
 
 export default {
   extensionsToTreatAsEsm: ['.ts'],
