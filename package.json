@@ -18,7 +18,7 @@
   ],
   "type": "module",
   "engines": {
-    "node": ">=20.12"
+    "node": ">=20.13"
   },
   "files": [
     "jest-preset.js"
@@ -26,11 +26,11 @@
   "peerDependencies": {
     "@jest/globals": "30.0.0-alpha.5",
     "jest": "30.0.0-alpha.5",
-    "ts-jest": "29.1.4"
+    "ts-jest": "29.1.5"
   },
   "devDependencies": {
     "@checkdigit/eslint-config": "^9.2.0",
-    "@checkdigit/prettier-config": "^5.4.0",
+    "@checkdigit/prettier-config": "^5.4.1",
     "@checkdigit/typescript-config": "^7.0.1"
   },
   "scripts": {
